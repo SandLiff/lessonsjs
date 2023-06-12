@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let costPhone = parseFloat(prompt("Введіть вартість телефону:", "15000"));
+			let quantityPhones = parseInt(prompt("Введіть кількість телефонів:", "5"));
+
+			let costHeadphones = parseFloat(prompt("Введіть вартість навушників:", "6300"));
+			let quantityHeadphones = parseInt(prompt("Введіть кількість навушників:", "10"));
+
+			let costLaptop = parseFloat(prompt("Введіть вартість ноутбуку:", "30000"));
+			let quantityLaptops = parseInt(prompt("Введіть кількість ноутбуків:", "3"));
+
+			let costPhones = costPhone * quantityPhones;
+			let costAllHeadphones = costHeadphones * quantityHeadphones;
+			let costLaptops = costLaptop * quantityLaptops;
+
+			let costAll = costPhones + costAllHeadphones + costLaptops;
+			let quantityAll = quantityPhones + quantityHeadphones + quantityLaptops;
+
+			document.write(
+				`<h1>Фіксальний чек</h1>
+	<div>
+		<h2>Телефони</h2>
+		<p>
+			Кількість телефонів: ${quantityPhones} <br>
+			Вартість одного телефону: ${costPhone} <br>
+			Вартість усих телефонів: ${costPhones}
+		</p>
+	</div>
+	<div>
+		<h2>Навушники</h2>
+		<p>
+			Кількість навушників: ${quantityHeadphones} <br>
+			Вартість одної пари навушників: ${costHeadphones} <br>
+			Варість усих навушників: ${costAllHeadphones}
+		</p>
+	</div>
+	<div>
+		<h2>Ноутбуки</h2>
+		<p>
+			Кількість ноутбуків: ${quantityLaptops} <br>
+			Вартість одного ноутбука: ${costLaptop} <br>
+			Вартість усих ноутбуків: ${costLaptops}
+		</p>
+	</div>
+	<div>
+		<h2>Загальна вартість</h2>
+		<p>
+			Кількість товарів: ${quantityAll} <br>
+			Вартість всих товарів: ${costAll} 
+		</p>
+	</div>
+	`
+			);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Lesson 2</title>
+		<script>
+			let firstNumber = parseFloat(prompt("Введіть перше число:", "1"));
+			let secondNumber = parseFloat(prompt("Введіть друге число:", "2"));
+			let thirdNumber = parseFloat(prompt("Введіть третє число:", "3"));
+
+			let sumFirst = firstNumber + 12 + secondNumber;
+
+			let sumSecond = firstNumber + secondNumber;
+			let productSecond = firstNumber * 2;
+			let partSecond = sumSecond / productSecond;
+			let radicalSecond = Math.sqrt(partSecond);
+
+			let sumThird = firstNumber + secondNumber;
+			let productThird = sumThird * thirdNumber;
+			let radicalThird = Math.sqrt(productThird);
+			let merdianThird = Math.pow(radicalThird, 3);
+
+			let partFourth = firstNumber / -secondNumber;
+			let sinFourth = Math.sin(partFourth);
+
+			document.write(`S1 = ${sumFirst} <br>`);
+			document.write(`S2 = ${radicalSecond.toFixed(2)} <br>`);
+			document.write(`S3 = ${merdianThird.toFixed(2)} <br>`);
+			document.write(`S4 = ${sinFourth.toFixed(3)} <br>`);
+		</script>
+	</head>
+	<body></body>
+</html>

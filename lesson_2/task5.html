@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let lengthCentimeter = parseFloat(prompt("Введіть довжину у см:", "30"));
+			document.write(`Дано: ${lengthCentimeter} сантиметрів <br>`);
+
+			let lengthMeter = lengthCentimeter / 100;
+			document.write(`Довжина у метрах: ${lengthMeter} <br>`);
+
+			let lengthKilometer = lengthCentimeter / 100000;
+			document.write(`Довжина в кілометрах: ${lengthKilometer}`);
+		</script>
+	</head>
+	<body></body>
+</html>

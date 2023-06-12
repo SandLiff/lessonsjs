@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let seconds = parseInt(prompt("Введіть кількість секунд, що пройшла від початку доби:", "3600"));
+
+			let minutes = seconds / 60;
+			document.write(`Пройшло хвилин з початку доби: ${minutes.toFixed(2)} <br>`);
+
+			let hours = seconds / 3600;
+			document.write(`Пройшло годин з початку доби: ${hours.toFixed(2)}`);
+		</script>
+	</head>
+	<body></body>
+</html>
