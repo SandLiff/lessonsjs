@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let userMoney = parseFloat(prompt("Скільки у вас грошей", "100"));
+			let costProduct = parseFloat(prompt("Введіть ціну твоару", "20"));
+			let userRemainder = userMoney - costProduct;
+
+			const costCasino = 4;
+
+			if (userRemainder >= costCasino) {
+				confirm("Купити лотерейний білет за 4 грн?");
+			} else if (userRemainder < 4 && userRemainder > 0) {
+				alert("Дякуємо за покупки!");
+			} else {
+				alert("Недостатньо коштів!");
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

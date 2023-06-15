@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let randomNumber = Math.floor(Math.random() * 5) + 1;
+
+			let userNumberFirst = parseInt(prompt("Спробуйте вгадати число від 1 до 5 (спроба 1)", "1"));
+
+			if (userNumberFirst > 5) {
+				let userNumberSecond = parseInt(prompt("Спробуйте вгадати число від 1 до 5 (спроба 1)", "1"));
+
+				if (userNumberSecond === randomNumber) {
+					alert("Ви вгадали");
+				} else {
+					alert(`Ви не вгадали. Правильне число: ${randomNumber}`);
+				}
+			}
+
+			if (userNumberFirst === randomNumber) {
+				alert("Ви вгадали");
+			} else {
+				let userNumberSecond = parseInt(prompt("Спробуйте вгадати число від 1 до 5 (спроба 2)", "1"));
+
+				if (userNumberSecond === randomNumber) {
+					alert("Ви вгадали");
+				} else {
+					alert(`Ви не вгадали. Правильне число: ${randomNumber}`);
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

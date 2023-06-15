@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Lesson 2</title>
+		<script>
+			let nameFirstChild = prompt("Як звати першу дитину?");
+			let sweetsFirstChild = parseInt(prompt("Скільки цукерок у першої дитини?"));
+
+			let nameScondChild = prompt("Як звати дуругу дитину?");
+			let sweetsSecondChild = parseInt(prompt("Скільки цукерок у другої дитини?"));
+
+			if (sweetsFirstChild > sweetsSecondChild) {
+				document.write(`У ${nameFirstChild} більше цукерок. Їх ${sweetsFirstChild}`);
+			} else if (sweetsFirstChild === sweetsSecondChild) {
+				document.write(`У дітей порівну цукерок`);
+			} else if (sweetsSecondChild > sweetsFirstChild) {
+				document.write(`У ${nameScondChild} більше цукерок. Їх ${sweetsSecondChild}`);
+			} else alert("Помилка! Введіть дані коректно.");
+		</script>
+	</head>
+	<body></body>
+</html>

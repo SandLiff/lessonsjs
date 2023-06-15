@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let userAge = parseInt(prompt("Введіть ваш вік:", "18"));
+
+			if (userAge <= 3) {
+				alert("Немовля");
+			} else if (userAge > 3 && userAge <= 6) {
+				alert("Дитина в садочку");
+			} else if (userAge > 6 && userAge <= 17) {
+				alert("Школяр");
+			} else if (userAge > 17 && userAge <= 22) {
+				alert("Студент");
+			} else if (userAge > 22 && userAge <= 64) {
+				alert("Працівник");
+			} else if (userAge >= 65) {
+				alert("Пенсіонер");
+			} else {
+				alert("Введіть дані коректно!");
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
